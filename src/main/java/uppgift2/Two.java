@@ -1,13 +1,15 @@
 package uppgift2;
 
-import uppgift2.factory.BeefBurgerFactory;
-import uppgift2.factory.Restaurant;
+
+import uppgift2.factory.AudiFactory;
+import uppgift2.factory.CarFactory;
 
 public class Two {
 
     public static void main(String[] args) {
 
-        Restaurant restaurant = new BeefBurgerFactory();
-        restaurant.createBurger().prepare();
+        CarFactory carFactory = new AudiFactory();
+        carFactory.assembleCar();
+
     }
 }
