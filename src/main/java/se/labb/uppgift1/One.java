@@ -25,6 +25,7 @@ public class One {
 
         Map<Gender,Double>averageSalary = personList.stream()
                 .collect(Collectors.groupingBy(Person::getGender,Collectors.averagingDouble(Person::getSalary)));
+        System.out.println(averageSalary);
 
 
 
