@@ -15,9 +15,13 @@ public class PrimeChecker implements Runnable {
 
     public synchronized void primeMethod() {
         for (int n = start; n < end; n++) {
+
             boolean prime = true;
+
             int i = 2;
+
             while (i <= n / 2) {
+
                 if (n % i == 0) {
                     prime = false;
                     break;

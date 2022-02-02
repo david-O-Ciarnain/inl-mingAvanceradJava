@@ -23,6 +23,7 @@ public record Person(String name, Gender gender, double salary) {
                 '}';
     }
 }
-enum Gender{
-    FEMALE,MALE,PREFER_NOT_TO_SAY
+
+enum Gender {
+    FEMALE, MALE, PREFER_NOT_TO_SAY
 }

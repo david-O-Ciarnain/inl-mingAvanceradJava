@@ -1,8 +1,6 @@
 package uppgift4;
 
 
-import java.util.List;
-
 public class Four {
 
 
@@ -34,13 +32,13 @@ public class Four {
         thread2.join();
         thread3.join();
         thread4.join();
-       int resultat = primeChecker.getSum() + primeChecker1.getSum() + primeChecker2.getSum() + primeChecker3.getSum()
+
+        int resultat = primeChecker.getSum() + primeChecker1.getSum() + primeChecker2.getSum() + primeChecker3.getSum()
                 + primeChecker4.getSum();
 
-                System.out.println("there is: "+ resultat  +" prime numbers between 2 and 500000");
+        System.out.println("there is: " + resultat + " prime numbers between 2 and 500000");
 
-//41538
-        //there is: 9592 prime numbers between 2 and 500000
+
 
     }
 
