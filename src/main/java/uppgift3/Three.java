@@ -12,7 +12,7 @@ public class Three {
         //a,e,i,o,u,y
 
 
-        List<String> stringList = List.of("me", "bean", "girl", "housing", "provoke"
+        List<String> stringList = List.of("bean", "me", "girl", "housing", "provoke"
                 , "amuse", "execute", "free", "impact", "brush", "eyebrow");
 
 
@@ -23,7 +23,7 @@ public class Three {
 
     public static void findWordsWithTwoOreMoreVowels(List<String> stringList) {
 
-        Pattern pattern = Pattern.compile("([aeiouy]\\w+){2,}", Pattern.CASE_INSENSITIVE);
+        Pattern pattern = Pattern.compile("([aeiouy]\\w*){2,}", Pattern.CASE_INSENSITIVE);
 
         List<String> list = stringList.stream()
                 .filter(word -> pattern.matcher(word).find())

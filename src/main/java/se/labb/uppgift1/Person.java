@@ -2,6 +2,7 @@ package se.labb.uppgift1;
 
 public record Person(String name, Gender gender, double salary) {
 
+
     public String getName() {
         return name;
     }

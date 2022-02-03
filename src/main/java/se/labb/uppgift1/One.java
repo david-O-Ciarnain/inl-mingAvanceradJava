@@ -29,6 +29,7 @@ public class One {
         System.out.println(averageSalary);
 
 
+
         personList.stream()
                 .max(Comparator.comparing(Person::getSalary))
                 .ifPresent(x -> System.out.println("highest salary " + x.getName() + ", salary: " + x.getSalary()));
